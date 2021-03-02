@@ -3,7 +3,6 @@ OOP design patterns from Head First Design Patterns Bok & Design Patterns & Elem
 
 ## Topics:
 * Strategy Pattern
-(https://images.app.goo.gl/ynugPHW2tMDU8ueL9)
 * Observer Pattern
 * Decorator Pattern
 * Factory Pattern
