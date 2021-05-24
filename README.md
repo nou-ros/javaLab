@@ -5,7 +5,7 @@ Java programming language workaround.
  - Java programming fundamentals.
  - Design Patterns by Java
  - Java GUI 
- Abacus
+ * Abacus - Simple Calculation with javaGUI 
  ![Example screenshot](https://raw.githubusercontent.com/nou-ros/JavaLab/main/_03_javaGui/abacus/abacus.png)
 
 ## Installation
