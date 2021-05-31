@@ -12,6 +12,7 @@
 # Dashboard
 ![dashboard](https://github.com/nou-ros/JavaLab/blob/main/_03_pet_projects/mangmics/project_images/4_dashboard.png)
 
+Find more pictures here. (https://github.com/nou-ros/JavaLab/tree/main/_03_pet_projects/mangmics/project_images)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
