@@ -8,7 +8,7 @@ Java programming language workaround.
  
  ![Example screenshot](https://github.com/nou-ros/JavaLab/blob/main/_03_pet_projects/abacus/abacus.png)
  
- - Pet Projects [Mangmics(https://github.com/nou-ros/JavaLab/tree/main/_03_pet_projects/mangmics) - Simple comic management system with Java]
+ - Pet Projects [[Mangmics](https://github.com/nou-ros/JavaLab/tree/main/_03_pet_projects/mangmics) - Simple comic management system with Java]
  
  ![Example screenshot](https://github.com/nou-ros/JavaLab/blob/main/_03_pet_projects/mangmics/project_images/1_intro.png)
  
