@@ -10,7 +10,7 @@ Java programming language workaround.
  
  - Pet Projects [Mangmics - Simple comic management system with Java]
  
- ![Example screenshot](https://raw.githubusercontent.com/nou-ros/JavaLab/main/_03_javaGui/abacus/abacus.png)
+ ![Example screenshot](https://github.com/nou-ros/JavaLab/blob/main/_03_pet_projects/mangmics/project_images/1_intro.png)
  
 ## Installation
 Install [Java](https://www.oracle.com/java/technologies/javase-downloads.html) to run any of the following project.
