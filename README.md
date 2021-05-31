@@ -6,7 +6,7 @@ Java programming language workaround.
  - Design Patterns by Java
  - Pet Projects [Abacus - Simple calculator with Java]
  
- ![Example screenshot](https://raw.githubusercontent.com/nou-ros/JavaLab/main/_03_javaGui/abacus/abacus.png)
+ ![Example screenshot](https://github.com/nou-ros/JavaLab/blob/main/_03_pet_projects/abacus/abacus.png)
  
  - Pet Projects [Mangmics - Simple comic management system with Java]
  
