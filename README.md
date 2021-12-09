@@ -2,9 +2,9 @@
 Java programming language workaround. 
 
 ## General Info
- - Java programming fundamentals.
  - Design Patterns by Java
  - Pet Projects [Abacus - Simple calculator with Java]
+ - Common programming problems solving with Java - JavaTponit
  
  ![Example screenshot](https://github.com/nou-ros/JavaLab/blob/main/_03_pet_projects/abacus/abacus.png)
  
