@@ -261,14 +261,105 @@ class CircularLinkedList{
 		count++;
 	}
 
+	public void removeDuplicate()
+	{
+		Node current = head,index = null,temp = null;
+
+		if(head == null)
+		{
+			System.out.println("List is empty");
+		}
+		else
+		{
+			do{
+				temp = current;
+				index = current.next;
+				while(index != head)
+				{
+					if(current.data==index.data)
+					{
+						temp.next = index.next;
+					}
+					else
+					{
+						temp = index;
+					}
+					index = index.next;
+				}
+				current = current.next;
+			}while(current.next!=head);
+		}
+	}
+
+	public void search(int element)
+	{
+		Node current = head;
+		int i = 1;
+		boolean flag = false;
+		if(head == null)
+		{
+			System.out.println("List is empty");
+		}
+		else
+		{
+			do{
+				if(current.data == element)
+				{
+					flag = true;
+					break;
+				}
+				current = current.next;
+				i++;
+			}while(current!=head);
+
+			if(flag)
+			{
+				System.out.println("Element present at: "+i);
+			}
+			else
+			{
+				System.out.println("Element not present");
+			}
+		}
+	}
+
+	public void sortList()
+	{
+		Node current=head,index=null;
+		int temp;
+		
+		if(head==null)
+		{
+			System.out.println("list is empty");
+		}
+		
+		else
+		{
+			do {
+
+				index = current.next;
+				while(index!=head)
+				{
+					if(current.data>index.data)
+					{											temp = current.data;
+						current.data = index.data;
+						index.data = temp;
+					}
+					index = index.next;
+				}
+				current = current.next;
+			}while(current.next != head);
+		}
+	}
+
 	public static void main(String [] args)
 	{
 		CircularLinkedList cll = new CircularLinkedList();
 
 		cll.add(1);
-		cll.add(2);
 		cll.add(3);
 		cll.add(4);
+		cll.add(2);
 
 		cll.display();
 		System.out.println("Number of nodes: " + cll.countNodes());
@@ -292,7 +383,14 @@ class CircularLinkedList{
 		System.out.println("Add new Node: ");
 		//cll.insertStart(7);
 		//cll.insertEnd(5);
-		cll.insertMiddle(0);
+		cll.insertMiddle(2);
 		cll.display();
+
+		//cll.removeDuplicate();
+		//cll.display();
+		//cll.search(3);
+		cll.sortList();
+		cll.display();
+
 	}
 }
