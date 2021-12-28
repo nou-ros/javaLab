@@ -255,6 +255,74 @@ public class DoublyLinkedList{
 		}
 	}
 
+	public void rotateList(int n)
+	{
+		Node current = head;
+		int size = countNode();
+		if(n == 0 || n >= size)
+			return;
+		else
+		{
+			for(int i = 1; i < n; i++)
+				current = current.next;
+			tail.next = head;
+			head = current.next;
+			head.previous = null;
+			tail = current;
+			tail.next = null;
+		}
+	}
+
+	public void searchNode(int value)
+	{
+		int i = 1;
+		boolean flag = false;
+		Node current = head;
+		if(head == null)
+		{
+			System.out.println("List is empty");
+			return;
+		}
+		while(current != null)
+		{
+			if(current.data == value)
+			{
+				flag = true;
+				break;
+			}
+			current = current.next;
+			i++;
+		}
+		if(flag)
+			System.out.println("Node is present at the position: " + i);
+		else
+			System.out.println("Node is not present");
+	}
+
+	public void sortList()
+	{
+		Node current = null, index = null;
+		int temp;
+		if(head == null)
+			return;
+		else
+		{
+			for(current = head; current.next != null; current = current.next)
+			{
+				for(index = current.next; index != null; index = index.next)
+				{
+					if(current.data > index.data)
+					{
+						temp = current.data;
+						current.data = index.data;
+						index.data = temp;
+						tail.next = null;
+					}
+				}
+			}
+		}
+	}
+
 	public static void main(String args[])
 	{
 		DoublyLinkedList dlist = new DoublyLinkedList();
@@ -267,21 +335,27 @@ public class DoublyLinkedList{
 		dlist.display();
 		System.out.println("Total nodes: " + dlist.countNode());
 
-		dlist.iterReverse();
-		System.out.println("Reverse iterative: ");
-		dlist.display();
+		//dlist.iterReverse();
+		//System.out.println("Reverse iterative: ");
+		//dlist.display();
 		//dlist.deleteMid();
 		//dlist.display();
 		//dlist.deleteEnd();
 		//dlist.display();
-		dlist.minMax();
-		dlist.insertEnd(2);
-		dlist.display();
-		dlist.insertBeginning(0);
-		dlist.display();
-		System.out.println("count" + dlist.countNode());
-		dlist.removeDuplicate();
-		System.out.println("Removed duplicate");
+		//dlist.minMax();
+		//dlist.insertEnd(2);
+		//dlist.display();
+		//dlist.insertBeginning(0);
+		//dlist.display();
+		//System.out.println("count" + dlist.countNode());
+		//dlist.removeDuplicate();
+		//System.out.println("Removed duplicate");
+		//dlist.display();
+		//dlist.rotateList(3);
+		//dlist.display();
+		//dlist.searchNode(3);
+
+		dlist.sortList();
 		dlist.display();
 	}
 }
