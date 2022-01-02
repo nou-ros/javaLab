@@ -1,5 +1,5 @@
 package studentManagementSystem;
-
+import java.util.Scanner;
 /*
  * How many new students will add to the database
  * enter name and year of student
@@ -14,8 +14,19 @@ package studentManagementSystem;
 public class StudentManagementSystem {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		// Create n number of new students
+		System.out.println("Enter number of new students to enroll: ");
+		Scanner scan = new Scanner(System.in);
+		int number = scan.nextInt();
+		Student students[] = new Student[number];
+		for (int n = 0; n < number; n++){
+			students[n] = new Student();
+			students[n].enroll();
+			students[n].payTuition();
+		}
+		scan.close();
+		for (int n = 0; n < number; n++){
+			System.out.println(students[n]);
+		}
 	}
-
 }

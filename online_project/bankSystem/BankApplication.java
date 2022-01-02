@@ -1,10 +1,9 @@
-package online_project.bankSystem;
+package bankSystem;
 import java.util.Scanner;
 
 public class BankApplication {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		BankAccount obj = new BankAccount("ABC", "XY0001");
 		obj.showMenu();
 	}

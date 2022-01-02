@@ -5,8 +5,8 @@ import java.util.List;
 public class SchoolManagementSystem {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Teacher lizzy = new Teacher(1,"Lizzy",500);
+		
+	Teacher lizzy = new Teacher(1,"Lizzy",500);
         Teacher mellisa = new Teacher(2,"Mellisa",700);
         Teacher vanderhorn = new Teacher(3,"Vanderhorn",600);
 

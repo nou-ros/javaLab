@@ -9,12 +9,11 @@
  * Have get methods to display the name, email and mailbox capacity.
  */
 
-package online_project.emailSystem;
+package emailSystem;
 
 public class EmailApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Email emp = new Email("John", "Smith");
 		System.out.print(emp.showInfo());
 //		emp.setAlternateEmail("emp@testmail.com");

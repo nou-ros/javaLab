@@ -1,4 +1,4 @@
-package online_project.emailSystem;
+package emailSystem;
 import java.util.Scanner;
 
 public class Email {
