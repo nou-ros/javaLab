@@ -20,21 +20,13 @@ public class SchoolManagementSystem {
         Student rakshith = new Student(2,"Rakshith Vasudev",12);
         Student rabbi = new Student(3,"Rabbi",5);
         List<Student> studentList = new ArrayList<>();
-
         studentList.add(tamasha);
         studentList.add(rabbi);
         studentList.add(rakshith);
-
-
-
-
+        
         School shikkha = new School(teacherList,studentList);
-
         Teacher megan = new Teacher(6,"Megan", 900);
-
         shikkha.addTeacher(megan);
-
-
         tamasha.payFees(5000);
         rakshith.payFees(6000);
         System.out.println("shikkha has earned $"+ shikkha.getTotalMoneyEarned());
@@ -47,7 +39,6 @@ public class SchoolManagementSystem {
         vanderhorn.receiveSalary(vanderhorn.getSalary());
         System.out.println("shikkha has spent for salary to " + vanderhorn.getName()
                 +" and now has $" + shikkha.getTotalMoneyEarned());
-
 
         System.out.println(rakshith);
 
