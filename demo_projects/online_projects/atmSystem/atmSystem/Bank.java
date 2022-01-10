@@ -106,7 +106,7 @@ public class Bank {
 	 * Get the User object associated with a particular userID and pin, if they are valid
 	 * @param userID - the UUID of the user to log in
 	 * @param pin - the pin of the user
-	 * @return - the User object, if the login is successfull, or null if it is not.
+	 * @return - the User object, if the login is successful, or null if it is not.
 	 */
 	public User userLogin(String userID, String pin) {
 		// search through list of users

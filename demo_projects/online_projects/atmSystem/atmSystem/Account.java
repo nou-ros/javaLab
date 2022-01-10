@@ -30,7 +30,7 @@ public class Account {
 	
 	/**
 	 * Get Account's ID
-	 * @return the uuid
+	 * @return the UUID
 	 */
 	public String getUUID(){
 		return this.uuid;
@@ -46,9 +46,10 @@ public class Account {
 		
 		// format the summary line, depending whether the balance is negative
 		if(balance >= 0 ) {
-			return String.format("%s : $%.02f : %s", this.uuid, balance, this.name);
+			
+			return String.format("%s : $%.02f : %s's %s Account", this.uuid, balance, this.holder.getFirstName(), this.name);
 		}else {
-			return String.format("%s : $(%.02f) : %s", this.uuid, balance, this.name);
+			return String.format("%s : $(%.02f) : %s's %s Account", this.uuid, balance, this.holder.getFirstName(), this.name);
 		}
 	}
 	

@@ -53,11 +53,11 @@ public class Transaction {
 	 */
 	public String getSummaryLine() {
 		if(this.amount >= 0) {
-			return String.format("%s : $%.02f : %s", 
-					this.timestamp.toString(), this.amount, this.memo);
+			return String.format("%s : $%.02f : %s. Remaining balance in -> %s", 
+					this.timestamp.toString(), this.amount, this.memo, this.inAccount.getSummaryLine());
 		}else {
-			return String.format("%s : $(%.02f) : %s", 
-					this.timestamp.toString(), this.amount, this.memo);
+			return String.format("%s : $(%.02f) : %s. Remaining balance in -> %s", 
+					this.timestamp.toString(), -this.amount, this.memo, this.inAccount.getSummaryLine());
 		}
 	}
 	
