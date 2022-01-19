@@ -1,6 +1,6 @@
 
 
-public class StringIntConversion{
+public class StringInt{
 	public static void main(String args[]){
 		stringToInt("200");
 		intToString(200);

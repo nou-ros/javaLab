@@ -1,5 +1,6 @@
 public class StringChar{
 	public static void main(String args[]){
+		// String to Char
 		String s = "hello";
 		for(int i = 0; i < s.length(); i++){
 			char c = s.charAt(i);
@@ -11,11 +12,12 @@ public class StringChar{
 			System.out.println("Char at " + i + " index is : " + ch[i]);
 		}
 
+		// Char to String
 		char c = 'N';
 		String charStr = String.valueOf(c);
 		System.out.println(charStr);
 		String charStr2 = Character.toString(c);
-		System.out.println(charStr);
+		System.out.println(charStr2);
 
 	}
 }

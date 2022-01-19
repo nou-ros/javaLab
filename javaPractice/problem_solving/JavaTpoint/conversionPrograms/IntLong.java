@@ -1,6 +1,6 @@
 public class IntLong{
 	public static void main(String args[]){
-		// long to int
+		// Long to Int
 		long l = 500L;
 		int i = (int)l;
 		Long longNum = 100L;

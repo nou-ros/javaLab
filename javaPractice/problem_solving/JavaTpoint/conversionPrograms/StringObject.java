@@ -1,19 +1,12 @@
 public class StringObject{
 	public static void main(String args[]){
-		// string to object
+		// String to Object
 		String s = "hello";
 		Object obj = s;
 		System.out.println(obj);
-		try{
-			Class c = Class.forName("java.lang.String");
-			System.out.println("class name: " + c.getName());
-			System.out.println("super class name: " + c.getSuperclass());
-		}catch(ClassNotFoundException e){
-			System.out.println(e);
-		}
 		
 		System.out.println("\n\n");
-		// object to string
+		// Object to String
 		Emp e = new Emp();
 		String str = e.toString();
 		String s2 = String.valueOf(e);
