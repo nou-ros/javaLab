@@ -1,4 +1,4 @@
-public class LargestBTElement{
+public class LargeSmallBTElement{
 	public static class Node{
 		int data;
 		Node left;
@@ -10,7 +10,7 @@ public class LargestBTElement{
 		}
 	}
 	public Node root;
-	public LargestBTElement(){
+	public LargeSmallBTElement(){
 		root = null;	
 	}
 	
@@ -32,8 +32,28 @@ public class LargestBTElement{
 			return max;
 		}
 	}
+
+	public int smallestElement(Node temp){
+		if(root == null){
+			System.out.println("Tree is empty");
+			return 0;
+		}else{
+			int leftMin, rightMin;
+			int min = temp.data;
+			if(temp.left != null){
+				leftMin = smallestElement(temp.left);
+				min = Math.min(min, leftMin);
+			}
+			if(temp.right != null){
+				rightMin = smallestElement(temp.right);
+				min = Math.min(min, rightMin);
+			}
+			return min;
+		}
+	}
+
 	public static void main(String args[]){
-		LargestBTElement bt = new LargestBTElement();
+		LargeSmallBTElement bt = new LargeSmallBTElement();
 		bt.root = new Node(15);
 		bt.root.left = new Node(20);
 		bt.root.right = new Node(35);
@@ -41,5 +61,6 @@ public class LargestBTElement{
 		bt.root.right.left = new Node(55);
 		bt.root.right.right = new Node(6);
 		System.out.println("Largest element: " + bt.largestElement(bt.root));
+		System.out.println("Smallest element: " + bt.smallestElement(bt.root));
 	}
 }
