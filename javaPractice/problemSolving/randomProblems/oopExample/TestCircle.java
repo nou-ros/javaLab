@@ -37,7 +37,7 @@ class Circle{
     }
 }
 
-class TestCricle{
+public class TestCricle{
     public static void main(String args[]){
         Circle c1 = new Circle();
         System.out.println("The circle has radius of " + c1.getRadius() + " and are of " + c1.getArea());
