@@ -6,7 +6,7 @@ Java programming language workaround.
  - Pet Projects [Abacus - Simple calculator with Java]
  - Common programming problems solving with Java - JavaTponit
  
- ![Example screenshot](https://github.com/nou-ros/JavaLab/demo_projects/abacus/abacus.png)
+ ![Example screenshot](https://github.com/nou-ros/javaLab/blob/main/demoProjects/abacus/abacus.png)
  
  - Demo Projects [[Mangmics](https://github.com/nou-ros/JavaLab/tree/main/demo_projects/mangmics) - Simple comic management system with Java]
  
